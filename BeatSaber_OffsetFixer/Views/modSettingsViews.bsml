@@ -1,0 +1,6 @@
+﻿<settings-container>
+    <slider-setting apply-on-change="true" value="rtMin" text="RT Range Minimum"
+                    min="200" max="5000" increment="10" show-buttons="true" formatter="SecondsFormatter" integer-only="true"/>
+    <slider-setting apply-on-change="true" value="rtMax" text="RT Range Maximum"
+                    min="200" max="5000" increment="10" show-buttons="true" formatter="SecondsFormatter" integer-only="true"/>
+</settings-container>

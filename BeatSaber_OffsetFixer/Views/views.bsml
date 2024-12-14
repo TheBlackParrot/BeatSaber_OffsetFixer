@@ -1,7 +1,7 @@
 ﻿<settings-container>
 	<checkbox-setting apply-on-change="true" value="Enabled" text="Enable Plugin"/>
-	<slider-setting apply-on-change="true" value="ReactionTime" text="Reaction Time (ms)"
-					   min="300" max="1000" increment="10"/>
+	<slider-setting apply-on-change="true" value="ReactionTime" text="Reaction Time"
+					   min="~rtMin" max="~rtMax" increment="10" show-buttons="true" formatter="SecondsFormatter"/>
 	<checkbox-setting apply-on-change="true" value="NJSMultiplier" text="NJS Multiplier"/>
 	<slider-setting apply-on-change="true" value="NJS" text="Base NJS"
 						min="8" max="40" increment="0.5"/>
@@ -10,9 +10,9 @@
 						min="1" max="8" increment="1"/>
 	<checkbox-setting apply-on-change="true" value="Overwrite" text="Enable Modifier Overwrite"/>
 	<slider-setting apply-on-change="true" value="SF" text="SF"
-						min="0.05" max="2" increment="0.05"/>
+						min="0.05" max="2" increment="0.05" formatter="PercentageFormatter"/>
 	<slider-setting apply-on-change="true" value="FS" text="FS"
-					min="0.05" max="2" increment="0.05"/>
+					min="0.05" max="2" increment="0.05" formatter="PercentageFormatter"/>
 	<slider-setting apply-on-change="true" value="SS" text="SS"
-					min="0.05" max="2" increment="0.05"/>
+					min="0.05" max="2" increment="0.05" formatter="PercentageFormatter"/>
 </settings-container>

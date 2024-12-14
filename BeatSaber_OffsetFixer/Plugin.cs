@@ -37,7 +37,7 @@ namespace BeatSaber_OffsetFixer
 
         public void MainMenuInit()
         {
-            BSMLSettings.Instance.AddSettingsMenu("OffsetFixer", "BeatSaber_OffsetFixer.Views.views.bsml", Configs.Configs.Instance);
+            BSMLSettings.Instance.AddSettingsMenu("OffsetFixer", "BeatSaber_OffsetFixer.Views.modSettingsViews.bsml", Configs.Configs.Instance);
             GameplaySetup.Instance.AddTab("OffsetFixer", "BeatSaber_OffsetFixer.Views.views.bsml", Configs.Configs.Instance, MenuType.All);
         }
 

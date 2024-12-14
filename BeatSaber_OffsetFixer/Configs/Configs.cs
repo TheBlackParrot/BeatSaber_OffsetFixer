@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using BeatSaberMarkupLanguage.Attributes;
 using IPA.Config.Stores;
 
 [assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
@@ -17,7 +18,14 @@ namespace BeatSaber_OffsetFixer.Configs
 		public virtual float SS { get; set; } = 0.85f;
 		public virtual float FS { get; set; } = 1.2f;
 		public virtual float SF { get; set; } = 1.5f;
-
+		[UIValue("rtMin")]
+		public virtual int ReactionTimeMinimum { get; set; } = 400;
+		[UIValue("rtMax")]
+		public virtual int ReactionTimeMaximum { get; set; } = 1200;
+		
+		public string SecondsFormatter(float x) => x.ToString("F0") + "ms";
+		public string PercentageFormatter(float x) => x.ToString("0%");
+		
 		/// <summary>
 		/// This is called whenever BSIPA reads the config from disk (including when file changes are detected).
 		/// </summary>
